@@ -11,6 +11,7 @@ export default function Audio() {
     const [isMuted, setIsMuted] = useState(false);
   
     useEffect(() => {
+      // eslint-disable-next-line
       let bg_audio = new Howl({
         src: [bgAudio],
         autoplay: true,

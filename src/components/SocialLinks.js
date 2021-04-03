@@ -11,7 +11,7 @@ export default function SocialLinks() {
                 ><FaDiscord className="text-2xl md:text-4xl inline" /> Discord</p>
             <div className="flex items-center gap-2 transform transition ease-in duration-300 hover:scale-110 cursor-pointer">
                 <div className="w-6 h-6 md:w-8 md:h-8 relative">
-                    <img className="w-full h-full" src={OpenSea}/>
+                    <img className="w-full h-full" src={OpenSea} alt="openSea logo"/>
                 </div>
                 <p className="text-xl md:text-2xl">OpenSea</p>
             </div>

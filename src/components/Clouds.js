@@ -3,7 +3,7 @@ import {useState} from 'react'
 
 
 export default function CloudContainer() {
-    const [cloudArray, setCloudArray] = useState([
+    const cloudArray = useState([
       {posX: 0, posY: 10, dur: 10000}, {posX: 15, posY: 6, dur: 15000}, {posX: 35, posY: 15, dur: 20000}, {posX: 55, posY: 3, dur: 25000},
       {posX: 70, posY: 4, dur: 30000}, {posX: 90, posY: 8, dur: 35000}
     ])

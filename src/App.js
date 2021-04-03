@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import {useState} from 'react'
+//components
+import Intro from './components/Intro'
+import CloudContainer from './components/Clouds'
+import Building from './components/Building'
+import Car from './components/Car'
+import SocialLinks from './components/SocialLinks'
+import Audio from './components/Audio'
+
+
 
 function App() {
+  const [isEntered, setIsEntered] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-full h-screen relative bg-blue-300 overflow-hidden">
+      {!isEntered && <Intro setIsEntered={setIsEntered} /> }
+      
+      <Building />
+      <Car isEntered={isEntered} />
+      {isEntered && <CloudContainer /> }
+      {isEntered && <Audio /> }
+
+      <SocialLinks />
     </div>
   );
 }

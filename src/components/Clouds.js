@@ -11,7 +11,7 @@ export default function CloudContainer() {
 
     return (
       <>
-      <div className="w-full h-full absolute animate-cloudsLeft">
+      <div className="w-full h-full absolute z-10 animate-cloudsLeft">
         {cloudArray.map(cloud => 
           <Cloud key={cloud.dur} posX={cloud.posX} posY={cloud.posY} />
           )}

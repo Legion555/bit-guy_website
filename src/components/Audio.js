@@ -36,7 +36,7 @@ export default function Audio() {
   
   const Icon = ({toggleMute, isMuted}) => {
     return (
-        <div className="absolute z-40 bottom-4 right-8 flex justify-center items-center">
+        <div className="absolute z-30 bottom-4 right-8 flex justify-center items-center">
             {!isMuted ?
             <svg className="transform rotate-180" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" onClick={() => toggleMute()}>
                 <rect class="eq-bar eq-bar--1" x="4" y="4" width="3.7" height="16"/>

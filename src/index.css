@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .backdropFilter-true {
+    backdrop-filter: blur(6px);
+  }
+  .backdropFilter-false {
+    backdrop-filter: blur(0px);
+  }
+}
+
 /* EQ */
 .eq-bar--1 {
   animation-name: short-eq;

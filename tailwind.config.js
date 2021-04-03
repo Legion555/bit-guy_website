@@ -7,6 +7,7 @@ module.exports = {
         'shuffle': 'shuffle 3s ease-in-out infinite',
         'cloudsLeft': 'cloudsLeft 30s linear infinite',
         'cloudsLeft2': 'cloudsLeft 30s linear 15s infinite',
+        'blurOut': 'blurOut 3s linear',
         },
       keyframes: {
         shuffle: {
@@ -16,6 +17,10 @@ module.exports = {
         cloudsLeft: {
           '0%': { right: '-100%' },
           '100%': { right: '125%' },
+        },
+        blurOut: {
+          '0%': { filter: 'blur(4px)' },
+          '100%': { right: 'blur(0px)' },
         }
       }
     },

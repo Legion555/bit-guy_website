@@ -8,6 +8,7 @@ module.exports = {
         'cloudsLeft': 'cloudsLeft 30s linear infinite',
         'cloudsLeft2': 'cloudsLeft 30s linear 15s infinite',
         'blurOut': 'blurOut 3s linear',
+        'lightCycle': 'lightCycle 30s linear infinite'
         },
       keyframes: {
         shuffle: {
@@ -21,6 +22,10 @@ module.exports = {
         blurOut: {
           '0%': { filter: 'blur(4px)' },
           '100%': { right: 'blur(0px)' },
+        },
+        lightCycle: {
+          '0%, 100%': { backgroundColor: '#87ceeb ' },
+          '50%': { backgroundColor: '#070B34' },
         }
       }
     },

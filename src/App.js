@@ -1,5 +1,4 @@
 import {useEffect, useState} from 'react'
-import {animated, useSpring} from 'react-spring'
 //components
 import Intro from './components/Intro'
 import CloudContainer from './components/Clouds'

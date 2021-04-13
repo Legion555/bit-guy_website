@@ -1,6 +1,7 @@
 //building exterior
 import Wall from '../assets/building/wall.png'
 import TopSection from '../assets/building/topSection.png'
+import BottomWall from '../assets/building/bottomWall.png'
 import BottomSection from '../assets/building/bottomSection.png'
 import roofTopLightsOff from '../assets/building/roofTopLightsOff.png'
 import roofTopLightsOn from '../assets/building/roofTopLightsOn.png'
@@ -35,8 +36,8 @@ export default function Building({timeOfDay}) {
             <Floor timeOfDay={timeOfDay} borderImg={Wall} backgroundImgDay={room3_lightsOff} backgroundImgNight={room3_lightsOn} />
             <Floor timeOfDay={timeOfDay} borderImg={Wall} backgroundImgDay={room2_lightsOff} backgroundImgNight={room2_lightsOn} />
             <Floor timeOfDay={timeOfDay} borderImg={Wall} backgroundImgDay={room1_lightsOff} backgroundImgNight={room1_lightsOn} />
-            <Floor timeOfDay={timeOfDay} borderImg={Wall} backgroundImgDay={lobbyLightsOff} backgroundImgNight={lobbyLightsOn} />
-            <img className="w-full" src={BottomSection} alt="building bottom" />
+            <Floor timeOfDay={timeOfDay} borderImg={BottomWall} backgroundImgDay={lobbyLightsOff} backgroundImgNight={lobbyLightsOn} />
+            <img className="w-full transform scale-x-105" src={BottomSection} alt="building bottom" />
         </div>
     )
 }

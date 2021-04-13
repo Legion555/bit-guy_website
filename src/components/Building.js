@@ -7,6 +7,18 @@ import roofTopLightsOn from '../assets/building/roofTopLightsOn.png'
 //rooms
 import lobbyLightsOff from '../assets/building/lobbyLightsOff.png'
 import lobbyLightsOn from '../assets/building/lobbyLightsOn.png'
+import room1_lightsOff from '../assets/building/room1_lightsOff.png'
+import room1_lightsOn from '../assets/building/room1_lightsOn.png'
+import room2_lightsOff from '../assets/building/room2_lightsOff.png'
+import room2_lightsOn from '../assets/building/room2_lightsOn.png'
+import room3_lightsOff from '../assets/building/room3_lightsOff.png'
+import room3_lightsOn from '../assets/building/room3_lightsOn.png'
+import room4_lightsOff from '../assets/building/room4_lightsOff.png'
+import room4_lightsOn from '../assets/building/room4_lightsOn.png'
+import room5_lightsOff from '../assets/building/room5_lightsOff.png'
+import room5_lightsOn from '../assets/building/room5_lightsOn.png'
+import room6_lightsOff from '../assets/building/room6_lightsOff.png'
+import room6_lightsOn from '../assets/building/room6_lightsOn.png'
 
 
 
@@ -17,12 +29,12 @@ export default function Building({timeOfDay}) {
             {timeOfDay === 'midday' && <img className="w-full" src={roofTopLightsOff} alt="rooftop" /> }
             {timeOfDay === 'night' && <img className="w-full" src={roofTopLightsOn} alt="rooftop" /> }            
             <img className="w-full" src={TopSection} alt="building top" />
-            <Floor timeOfDay={timeOfDay} borderImg={Wall} backgroundImgDay={lobbyLightsOff} backgroundImgNight={lobbyLightsOn} />
-            <Floor timeOfDay={timeOfDay} borderImg={Wall} backgroundImgDay={lobbyLightsOff} backgroundImgNight={lobbyLightsOn} />
-            <Floor timeOfDay={timeOfDay} borderImg={Wall} backgroundImgDay={lobbyLightsOff} backgroundImgNight={lobbyLightsOn} />
-            <Floor timeOfDay={timeOfDay} borderImg={Wall} backgroundImgDay={lobbyLightsOff} backgroundImgNight={lobbyLightsOn} />
-            <Floor timeOfDay={timeOfDay} borderImg={Wall} backgroundImgDay={lobbyLightsOff} backgroundImgNight={lobbyLightsOn} />
-            <Floor timeOfDay={timeOfDay} borderImg={Wall} backgroundImgDay={lobbyLightsOff} backgroundImgNight={lobbyLightsOn} />
+            <Floor timeOfDay={timeOfDay} borderImg={Wall} backgroundImgDay={room6_lightsOff} backgroundImgNight={room6_lightsOn} />
+            <Floor timeOfDay={timeOfDay} borderImg={Wall} backgroundImgDay={room5_lightsOff} backgroundImgNight={room5_lightsOn} />
+            <Floor timeOfDay={timeOfDay} borderImg={Wall} backgroundImgDay={room4_lightsOff} backgroundImgNight={room4_lightsOn} />
+            <Floor timeOfDay={timeOfDay} borderImg={Wall} backgroundImgDay={room3_lightsOff} backgroundImgNight={room3_lightsOn} />
+            <Floor timeOfDay={timeOfDay} borderImg={Wall} backgroundImgDay={room2_lightsOff} backgroundImgNight={room2_lightsOn} />
+            <Floor timeOfDay={timeOfDay} borderImg={Wall} backgroundImgDay={room1_lightsOff} backgroundImgNight={room1_lightsOn} />
             <Floor timeOfDay={timeOfDay} borderImg={Wall} backgroundImgDay={lobbyLightsOff} backgroundImgNight={lobbyLightsOn} />
             <img className="w-full" src={BottomSection} alt="building bottom" />
         </div>
